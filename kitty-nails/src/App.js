@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import logo from './images/kitty_nails_logo.png';
 import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 function App() {
+  const logoRef = useRef();
+
   const links = [
     {
       title: "¡Agendá tu turno!",
@@ -32,10 +34,26 @@ function App() {
     }
   ];
 
+  const triggerRubberBand = () => {
+    const logo = logoRef.current;
+    if (!logo) return;
+    logo.classList.remove('rubber-anim');
+    void logo.offsetWidth;
+    logo.classList.add('rubber-anim');
+  };
+
   return (
     <div className="App">
       <div className="profile-logo-outer">
-        <img src={logo} alt="Kitty Nails Logo" className="profile-logo" />
+        <img
+          ref={logoRef}
+          src={logo}
+          alt="Kitty Nails Logo"
+          className="profile-logo"
+          onMouseEnter={triggerRubberBand}
+          onTouchStart={triggerRubberBand}
+          style={{ cursor: 'pointer' }}
+        />
       </div>
       <div className="container">
         
