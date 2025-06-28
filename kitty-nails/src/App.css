@@ -29,16 +29,14 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 430px;
   width: 100%;
   background: #cd3e7cb1;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
   border: 1px solid #271627;
-  padding: 50px 50px 16px 50px;
-  position: relative;
-  padding-top: 80px; /* espacio para el logo flotante */
+  padding: 10px 50px 16px 50px;
 }
 
 .link-card {
@@ -145,7 +143,7 @@ body {
 
 .profile-image {
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -154,25 +152,16 @@ body {
   justify-content: center;
 }
 
-.profile-logo-outer {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -40%);
-  z-index: 100;
-  pointer-events: none;
-}
-
 .profile-logo {
-  width: 510px;
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 340px;
+  max-width: 90vw;
   height: auto;
   object-fit: contain;
-  display: block;
   background: none;
   border: none;
   box-shadow: none;
-  margin-top: 220px;
-  margin: 50 auto;
   padding: 0;
   animation: kittyFloat 2.5s ease-in-out infinite;
 }
@@ -184,7 +173,7 @@ body {
 }
 
 .rubber-anim {
-  animation: kittyRubberBand 0.7s;
+  animation: kittyRubberBand 0.7s, kittyFloat 2.5s ease-in-out infinite;
 }
 
 @keyframes kittyRubberBand {
@@ -196,3 +185,26 @@ body {
   75% { transform: scale3d(1.05, .95, 1); }
   100% { transform: scale3d(1, 1, 1); }
 }
+
+@media (max-width: 600px) {
+  .profile-logo {
+    width: 90vw;
+    max-width: 320px;
+    margin-bottom: 8px;
+  }
+  .container {
+    padding: 20px 4vw 6vw 4vw;
+    border-radius: 12px;
+  }
+  .link-card {
+    font-size: 0.98rem;
+    padding: 12px 6px;
+    margin: 7px 0;
+  }
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Elimina reglas de .profile-logo-outer y top negativo */
+.profile-logo-outer { display: none; }
