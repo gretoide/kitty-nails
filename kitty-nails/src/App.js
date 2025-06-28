@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import './App.css';
 import logo from './images/kitty_nails_logo.png';
 import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok } from 'react-icons/fa';
+import Particles from './Particles';
 
 function App() {
   const logoRef = useRef();
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <div className="App">
+      <Particles />
       <div className="profile-logo-outer">
         <img
           ref={logoRef}
