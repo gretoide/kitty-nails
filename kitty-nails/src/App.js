@@ -1,38 +1,33 @@
 import React from 'react';
 import './App.css';
-import { FaInstagram, FaWhatsapp, FaCalendarAlt, FaImages, FaGem, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa';
 
 function App() {
   const links = [
     {
       title: "Instagram",
-      url: "https://instagram.com/kittynails",
+      url: "https://instagram.com/kittynails.ar",
       icon: <FaInstagram color="#fff" size={22} />
     },
     {
-      title: "WhatsApp",
+      title: "¡Agendá tu turno!",
       url: "https://wa.me/1234567890",
       icon: <FaWhatsapp color="#fff" size={22} />
     },
     {
-      title: "Reservar Turno",
-      url: "#turnos",
-      icon: <FaCalendarAlt color="#fff" size={22} />
-    },
-    {
-      title: "Ver Trabajos",
+      title: "Nail Inspo",
       url: "#galeria",
-      icon: <FaImages color="#fff" size={22} />
+      icon: <FaPinterest color="#fff" size={22} />
     },
     {
-      title: "Precios",
-      url: "#precios",
-      icon: <FaGem color="#fff" size={22} />
+      title: "Tik Tok",
+      url: "#galeria",
+      icon: <FaTiktok color="#fff" size={22} />
     },
     {
-      title: "Ubicación",
+      title: "Kitty Nails Playlist",
       url: "#ubicacion",
-      icon: <FaMapMarkerAlt color="#fff" size={22} />
+      icon: <FaYoutube color="#fff" size={22} />
     }
   ];
 
@@ -41,16 +36,6 @@ function App() {
       <div className="container">
         {/* Header */}
         <div className="header">
-          <div className="profile-section">
-            <div className="profile-image">
-              <span className="profile-icon">🐱</span>
-            </div>
-            <h1 className="brand-name">Kitty Nails</h1>
-            <p className="tagline">✨ Belleza en tus manos ✨</p>
-            <p className="description">
-              Diseños únicos y profesionales para que tus uñas sean la envidia de todas
-            </p>
-          </div>
         </div>
 
         {/* Links */}
@@ -72,13 +57,8 @@ function App() {
         {/* Footer */}
         <div className="footer">
           <p className="footer-text">
-            💖 Hecho con amor para Kitty Nails 💖
+            ¡Vení a afilar esas garritas!
           </p>
-          <div className="social-icons">
-            <span className="social-icon">💅</span>
-            <span className="social-icon">✨</span>
-            <span className="social-icon">💎</span>
-          </div>
         </div>
       </div>
     </div>
