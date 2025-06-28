@@ -1,37 +1,38 @@
 import React from 'react';
 import './App.css';
+import { FaInstagram, FaWhatsapp, FaCalendarAlt, FaImages, FaGem, FaMapMarkerAlt } from 'react-icons/fa';
 
 function App() {
   const links = [
     {
-      title: "📱 Instagram",
+      title: "Instagram",
       url: "https://instagram.com/kittynails",
-      icon: "💅"
+      icon: <FaInstagram color="#fff" size={22} />
     },
     {
-      title: "📞 WhatsApp",
+      title: "WhatsApp",
       url: "https://wa.me/1234567890",
-      icon: "💬"
+      icon: <FaWhatsapp color="#fff" size={22} />
     },
     {
-      title: "📅 Reservar Turno",
+      title: "Reservar Turno",
       url: "#turnos",
-      icon: "✨"
+      icon: <FaCalendarAlt color="#fff" size={22} />
     },
     {
-      title: "📸 Ver Trabajos",
+      title: "Ver Trabajos",
       url: "#galeria",
-      icon: "🌟"
+      icon: <FaImages color="#fff" size={22} />
     },
     {
-      title: "💰 Precios",
+      title: "Precios",
       url: "#precios",
-      icon: "💎"
+      icon: <FaGem color="#fff" size={22} />
     },
     {
-      title: "📍 Ubicación",
+      title: "Ubicación",
       url: "#ubicacion",
-      icon: "🏠"
+      icon: <FaMapMarkerAlt color="#fff" size={22} />
     }
   ];
 
