@@ -1,43 +1,44 @@
 import React from 'react';
 import './App.css';
-import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa';
+import logo from './images/kitty_nails_logo.png';
+import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 function App() {
   const links = [
     {
-      title: "Instagram",
-      url: "https://instagram.com/kittynails.ar",
-      icon: <FaInstagram color="#fff" size={22} />
-    },
-    {
       title: "¡Agendá tu turno!",
       url: "https://wa.me/1234567890",
-      icon: <FaWhatsapp color="#fff" size={22} />
+      icon: <FaWhatsapp size={22} />
+    },
+    {
+      title: "Instagram",
+      url: "https://instagram.com/kittynails",
+      icon: <FaInstagram size={22} />
     },
     {
       title: "Nail Inspo",
-      url: "#galeria",
-      icon: <FaPinterest color="#fff" size={22} />
+      url: "https://pinterest.com/kittynails",
+      icon: <FaPinterest size={22} />
     },
     {
       title: "Tik Tok",
-      url: "#galeria",
-      icon: <FaTiktok color="#fff" size={22} />
+      url: "https://tiktok.com/@kittynails",
+      icon: <FaTiktok size={22} />
     },
     {
       title: "Kitty Nails Playlist",
-      url: "#ubicacion",
-      icon: <FaYoutube color="#fff" size={22} />
+      url: "https://youtube.com/playlist?list=PLKittyNails",
+      icon: <FaYoutube size={22} />
     }
   ];
 
   return (
     <div className="App">
+      <div className="profile-logo-outer">
+        <img src={logo} alt="Kitty Nails Logo" className="profile-logo" />
+      </div>
       <div className="container">
-        {/* Header */}
-        <div className="header">
-        </div>
-
+        
         {/* Links */}
         <div className="links-container">
           {links.map((link, index) => (
@@ -53,7 +54,6 @@ function App() {
             </a>
           ))}
         </div>
-
         {/* Footer */}
         <div className="footer">
           <p className="footer-text">

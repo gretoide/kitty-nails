@@ -20,6 +20,7 @@ body {
 }
 
 .App {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -35,13 +36,14 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   border: 1px solid #271627;
-  padding: 50px;
-  padding-bottom: 16px;
+  padding: 50px 50px 16px 50px;
+  position: relative;
+  padding-top: 80px; /* espacio para el logo flotante */
 }
 
 .link-card {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   margin: 10px;
   padding: 14px 20px;
@@ -49,20 +51,49 @@ body {
   border: 1px solid #271627;
   border-radius: 14px;
   text-decoration: none;
-  color: #fff;
+  color: #ffffffe8;
   font-weight: 700;
   font-size: 1rem;
-  transition: transform 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition: 
+    box-shadow 0.35s cubic-bezier(.4,2,.3,1),
+    transform 0.22s cubic-bezier(.4,2,.3,1),
+    background 0.4s cubic-bezier(.4,2,.3,1),
+    border-color 0.3s cubic-bezier(.4,2,.3,1),
+    color 0.3s cubic-bezier(.4,2,.3,1);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   gap: 10px;
-  will-change: transform;
+  will-change: transform, box-shadow, color;
+  position: relative;
+  overflow: hidden;
 }
 
 .link-card:hover {
-  transform: scale(1.03);
-  background-color: #cd3e7db4;
+  transform: translateY(-4px) scale(1.045);
+  box-shadow: 0 8px 32px #f34a9377, 0 2px 8px #0003;
   border-color: #f34a93;
-  color: #fff;
+  background: #cd3e7db4;
+  color: #f34a93;
+}
+
+
+.link-card:hover .link-icon,
+.link-card:hover .link-title {
+  color: #ffffff;
+  transition: color 0.3s cubic-bezier(.4,2,.3,1);
+}
+
+.link-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  box-shadow: 0 0 0 0 #f34a93;
+  pointer-events: none;
+  transition: box-shadow 0.4s cubic-bezier(.4,2,.3,1);
+}
+
+.link-card:hover::after {
+  box-shadow: 0 0 0 4px #f34a9340;
 }
 
 .link-icon {
@@ -110,4 +141,37 @@ body {
   .footer {
     padding: 8px 3px;
   }
+}
+
+.profile-image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-logo-outer {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -40%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.profile-logo {
+  width: 510px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-top: 220px;
+  margin: 50 auto;
+  padding: 0;
 }
