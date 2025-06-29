@@ -1,93 +1,49 @@
-# Kitty Nails - Linktree
+# Kitty Nails Web
 
-Una página web moderna y elegante similar a Linktree para el emprendimiento de uñas "Kitty Nails".
+¡Bienvenida a Kitty Nails! 💅
 
-## 🎨 Características
+Este proyecto es una landing page moderna y responsiva para el estudio de uñas "Kitty Nails". Permite a las clientas reservar turnos, inspirarse con diseños, ver trabajos realizados y acceder a las redes sociales del estudio, todo en un solo lugar y con una estética cute y profesional.
 
-- **Diseño Moderno**: Interfaz elegante con gradientes rosados y púrpuras
-- **Responsive**: Se adapta perfectamente a dispositivos móviles y desktop
-- **Animaciones**: Efectos suaves y profesionales
-- **Tipografía Elegante**: Combinación de fuentes Dancing Script y Poppins
-- **Enlaces Personalizables**: Fácil configuración de enlaces sociales y de contacto
+## ✨ Características
+- Diseño responsive y atractivo, inspirado en la estética VTuber/kawaii.
+- Animaciones suaves y partículas decorativas tipo hollín de Totoro.
+- Logo animado y destacado.
+- Acceso rápido a WhatsApp, Instagram, Pinterest, TikTok y playlist de YouTube.
+- Fácil de personalizar y expandir.
 
-## 🚀 Cómo usar
+## 🚀 Instalación y uso local
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repo>
+   ```
+2. Instala las dependencias:
+   ```bash
+   cd kitty-nails/kitty-nails
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
+   ```
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-### Instalación
+## 🌐 Despliegue
+El sitio está optimizado para ser desplegado en Vercel, Netlify o cualquier hosting de aplicaciones React.
 
-```bash
-npm install
-```
+## 📁 Estructura principal
+- `src/App.js` — Componente principal de la app.
+- `src/App.css` — Estilos globales y animaciones.
+- `src/Particles.js` y `src/Particles.css` — Efecto de partículas decorativas.
+- `public/` — Archivos estáticos, imágenes y metadatos.
 
-### Desarrollo
+## 🖼️ Personalización
+- Cambia los enlaces de redes sociales y playlist en `App.js`.
+- Reemplaza el logo en `src/images/` y en los metadatos de `public/index.html`.
+- Ajusta colores y animaciones en `App.css`.
 
-```bash
-npm start
-```
-
-La aplicación se abrirá en [http://localhost:3000](http://localhost:3000).
-
-### Construcción para producción
-
-```bash
-npm run build
-```
-
-## 📱 Enlaces Configurables
-
-Los enlaces se pueden personalizar editando el array `links` en `src/App.js`:
-
-```javascript
-const links = [
-  {
-    title: "📱 Instagram",
-    url: "https://instagram.com/kittynails",
-    icon: "💅"
-  },
-  // ... más enlaces
-];
-```
-
-## 🎨 Personalización
-
-### Colores
-Los colores principales utilizados son:
-- Rosa principal: `#ff6b9d`
-- Púrpura: `#c44569`
-- Dorado: `#f8b500`
-- Gradiente de fondo: `#667eea` a `#764ba2`
-
-### Fuentes
-- **Dancing Script**: Para el nombre de la marca
-- **Poppins**: Para el texto general
-
-## 📋 Enlaces Incluidos
-
-1. **Instagram** - Red social principal
-2. **WhatsApp** - Contacto directo
-3. **Reservar Turno** - Sistema de citas
-4. **Ver Trabajos** - Galería de trabajos
-5. **Precios** - Lista de servicios
-6. **Ubicación** - Información de ubicación
-
-## 🔧 Tecnologías Utilizadas
-
-- React 19.1.0
-- CSS3 con gradientes y animaciones
-- Google Fonts
-- Diseño responsive
-
-## 📸 Capturas de Pantalla
-
-La página incluye:
-- Header con logo y descripción
-- Enlaces organizados en tarjetas
-- Footer con información de contacto
-- Efectos hover y animaciones
-
-## 🎯 Objetivo
-
-Crear una presencia digital profesional y atractiva para el emprendimiento de uñas, facilitando el contacto con clientes y la promoción de servicios.
+## 👩‍🎨 Créditos
+- Diseño y desarrollo: [Tu nombre o Kitty Nails]
+- Inspiración: Estética VTuber, Studio Ghibli (Totoro), y comunidad de nail art.
 
 ---
-
-💅 **Hecho con amor para Kitty Nails** 💅
+¡Gracias por visitar Kitty Nails! Si tienes sugerencias o quieres colaborar, no dudes en abrir un issue o pull request.
