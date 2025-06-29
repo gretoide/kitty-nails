@@ -8,27 +8,27 @@ function App() {
   const links = [
     {
       title: "¡Agendá tu turno!",
-      url: "https://wa.me/1234567890",
+      url: "https://wa.me/542213144468",
       icon: <FaWhatsapp size={22} />
     },
     {
       title: "Instagram",
-      url: "https://instagram.com/kittynails",
+      url: "https://instagram.com/kittynails.ar",
       icon: <FaInstagram size={22} />
     },
     {
       title: "Nail Inspo",
-      url: "https://pinterest.com/kittynails",
+      url: "https://ar.pinterest.com/grepiacentini/nail-inspo-kitty-nails/",
       icon: <FaPinterest size={22} />
     },
     {
       title: "Tik Tok",
-      url: "https://tiktok.com/@kittynails",
+      url: "https://www.tiktok.com/@kittynails.ar?is_from_webapp=1&sender_device=pc",
       icon: <FaTiktok size={22} />
     },
     {
       title: "Kitty Nails Playlist",
-      url: "https://youtube.com/playlist?list=PLKittyNails",
+      url: "https://youtube.com/playlist?list=PLJxCP24SOr4x-K_SNN27y8jLHsO0qcDKA&si=HaIUZQERGUIa2Ae5",
       icon: <FaYoutube size={22} />
     }
   ];

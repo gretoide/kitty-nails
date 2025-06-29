@@ -188,9 +188,9 @@ body {
 
 @media (max-width: 600px) {
   .profile-logo {
+    margin: 0 auto 0px auto;
     width: 90vw;
     max-width: 320px;
-    margin-bottom: 8px;
   }
   .container {
     padding: 20px 4vw 6vw 4vw;
