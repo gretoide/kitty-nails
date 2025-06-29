@@ -199,7 +199,8 @@ body {
   .link-card {
     font-size: 0.98rem;
     padding: 12px 6px;
-    margin: 7px 0;
+    margin: 10px;
+    padding: 14px 20px;
   }
   .footer-text {
     font-size: 0.8rem;
