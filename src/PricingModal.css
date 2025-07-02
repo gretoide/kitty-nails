@@ -36,6 +36,8 @@
   overflow-y: auto;
   position: relative;
   animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  scrollbar-width: thin;
+  scrollbar-color: #cd3e7c #23202bc0;
 }
 
 @keyframes slideIn {
@@ -297,4 +299,19 @@
     font-size: 0.9rem;
     padding: 3px 8px;
   }
+}
+
+/* Para navegadores basados en Webkit (Chrome, Edge, Safari) */
+.modal-content::-webkit-scrollbar {
+  width: 10px;
+  background: #23202bc0;
+  border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: #cd3e7c;
+  border-radius: 10px;
+  border: 2px solid #23202bc0;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #f34a93;
 } 
