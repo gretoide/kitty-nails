@@ -6,7 +6,7 @@ import Particles from './Particles';
 import PricingModal from './PricingModal';
 
 function App() {
-  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+  
 
   const links = [
     {
@@ -36,6 +36,8 @@ function App() {
     }
   ];
 
+  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+
   return (
     <div className="App">
       <Particles />
@@ -49,17 +51,7 @@ function App() {
         {/* Links */}
         <div className="links-container">
           {/* Pricing Button */}
-          <button
-            className="link-card pricing-button"
-            type="button"
-            onClick={() => setIsPricingModalOpen(true)}
-            tabIndex={0}
-          >
-            <span className="link-icon">
-              <FaDollarSign size={22} />
-            </span>
-            <span className="link-title">Ver Precios</span>
-          </button>
+          
           {links.map((link, index) => (
             <a
               key={index}
@@ -73,6 +65,17 @@ function App() {
             </a>
           ))}
         </div>
+        <button
+            className="link-card pricing-button"
+            type="button"
+            onClick={() => setIsPricingModalOpen(true)}
+            tabIndex={0}
+          >
+            <span className="link-icon">
+              <FaDollarSign size={22} />
+            </span>
+            <span className="link-title">Ver Precios</span>
+          </button>
         {/* Footer */}
         <div className="footer">
           <p className="footer-text">
