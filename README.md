@@ -4,14 +4,14 @@ Este repositorio contiene la configuración y documentación general del proyect
 
 ## 📦 Estructura del Proyecto
 
-- `kitty-nails/` — Carpeta principal de la aplicación web (React).
+- `kitty-nails/` — Aplicación web React (proyecto principal).
 - `imagenes/` — Recursos gráficos y plantillas.
 
 ## 🚀 ¿Cómo empezar?
 
 1. Entra a la carpeta de la app:
    ```bash
-   cd kitty-nails/kitty-nails
+   cd kitty-nails
    ```
 2. Instala las dependencias:
    ```bash

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './images/kitty_nails_logo.png';
-import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaPinterest, FaYoutube, FaTiktok, FaDollarSign } from 'react-icons/fa';
 import Particles from './Particles';
+import PricingModal from './PricingModal';
 
 function App() {
+  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+
   const links = [
     {
       title: "¡Agendá tu turno!",
@@ -57,6 +60,17 @@ function App() {
               <span className="link-title">{link.title}</span>
             </a>
           ))}
+          
+          {/* Pricing Button */}
+          <button
+            className="link-card pricing-button"
+            onClick={() => setIsPricingModalOpen(true)}
+          >
+            <span className="link-icon">
+              <FaDollarSign size={22} />
+            </span>
+            <span className="link-title">Ver Precios</span>
+          </button>
         </div>
         {/* Footer */}
         <div className="footer">
@@ -65,6 +79,12 @@ function App() {
           </p>
         </div>
       </div>
+      
+      {/* Pricing Modal */}
+      <PricingModal 
+        isOpen={isPricingModalOpen} 
+        onClose={() => setIsPricingModalOpen(false)} 
+      />
     </div>
   );
 }
