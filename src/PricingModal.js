@@ -7,36 +7,31 @@ const PricingModal = ({ isOpen, onClose }) => {
 
   const pricingData = [
     {
-      category: "Manicura Básica",
+      category: "SERVICIOS",
       services: [
-        { name: "Manicura Simple", price: "$2.500" },
-        { name: "Manicura con Esmaltado", price: "$3.500" },
-        { name: "Manicura con Esmaltado Semi", price: "$4.500" }
+        { name: "Manicura rusa", price: "$ 12.000,00" },
+        { name: "Esmaltado semipermanente", price: "$ 13.500,00" },
+        { name: "Kapping Gel", price: "$ 14.500,00" },
+        { name: "Extension Soft Gel", price: "$ 19.500,00" },
+        { name: "Press On Nails", price: "-" },
       ]
     },
     {
-      category: "Uñas Esculpidas",
+      category: "DISEÑOS",
       services: [
-        { name: "Esculpidas en Gel", price: "$8.500" },
-        { name: "Esculpidas en Acrílico", price: "$9.500" },
-        { name: "Esculpidas con Diseño", price: "$12.000" }
+        { name: "Decoración básica por uña (stamping, stickers, polvos, glitters)", price: "$ 300,00" },
+        { name: "Decoración básica en las 10 uñas", price: "$ 2.500,00" },
+        { name: "Diseño elaborado", price: "$ 600,00" },
+        { name: "Francesita", price: "$ 500,00" },
       ]
     },
     {
-      category: "Diseños Especiales",
+      category: "EXTRAS",
       services: [
-        { name: "Diseño Simple", price: "$1.500" },
-        { name: "Diseño Complejo", price: "$2.500" },
-        { name: "Diseño con Piedras", price: "$3.000" },
-        { name: "Diseño con Foil", price: "$2.000" }
-      ]
-    },
-    {
-      category: "Tratamientos",
-      services: [
-        { name: "Tratamiento de Cutículas", price: "$1.500" },
-        { name: "Hidratación Profunda", price: "$2.000" },
-        { name: "Reparación de Uña", price: "$1.000" }
+        { name: "Extension de uña con SOFT GEL", price: "$ 2.000,00" },
+        { name: "Arreglo de uña", price: "$ 600,00" },
+        { name: "Remoción de otro colega", price: "$ 8.000,00" },
+        { name: "Visita a domicilio", price: "$ 5.000,00" },
       ]
     }
   ];
