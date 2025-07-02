@@ -48,6 +48,18 @@ function App() {
         />
         {/* Links */}
         <div className="links-container">
+          {/* Pricing Button */}
+          <button
+            className="link-card pricing-button"
+            type="button"
+            onClick={() => setIsPricingModalOpen(true)}
+            tabIndex={0}
+          >
+            <span className="link-icon">
+              <FaDollarSign size={22} />
+            </span>
+            <span className="link-title">Ver Precios</span>
+          </button>
           {links.map((link, index) => (
             <a
               key={index}
@@ -60,17 +72,6 @@ function App() {
               <span className="link-title">{link.title}</span>
             </a>
           ))}
-          
-          {/* Pricing Button */}
-          <button
-            className="link-card pricing-button"
-            onClick={() => setIsPricingModalOpen(true)}
-          >
-            <span className="link-icon">
-              <FaDollarSign size={22} />
-            </span>
-            <span className="link-title">Ver Precios</span>
-          </button>
         </div>
         {/* Footer */}
         <div className="footer">
